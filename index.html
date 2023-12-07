@@ -14,7 +14,7 @@
     class="w-full px-6 py-6 fixed flex items-center justify-between z-30 top-0 inset-x-0 bg-white transition-all duration-300 ease-out"
 >
     <img class="h-[64px] p-1" src="/logo.svg">
-    <nav class="uppercase text-blue font-medium hidden md:flex">
+    <nav class="text-blue font-medium hidden md:flex">
         <a href="#" class="px-3 transition-all hover:tracking-[3px]">Accueil</a>
         <a href="#propos" class="px-3 transition-all hover:tracking-[3px]">A propos</a>
         <a href="#portfolio" class="px-3 transition-all hover:tracking-[3px]">Portfolio</a>
@@ -39,7 +39,7 @@
                 x-transition:leave-start="translate-x-0"
                 x-transition:leave-end="translate-x-full"
                 class="fixed right-0 top-0 w-1/2 h-screen bg-grey text-white flex items-center flex-col justify-center">
-            <p @click="clickMenu">Fermer</p>
+            <img @click="clickMenu" src="/clear.svg">
             <a href="#" @click="clickMenu" class="px-3 text-[24px] transition-all hover:tracking-[3px]">Accueil</a>
             <a href="#propos" @click="clickMenu" class="px-3 text-[24px]  transition-all hover:tracking-[3px]">A propos</a>
             <a href="#portfolio" @click="clickMenu" class="px-3 text-[24px]  transition-all hover:tracking-[3px]">Portfolio</a>
